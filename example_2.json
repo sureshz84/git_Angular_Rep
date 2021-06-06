@@ -14,6 +14,7 @@
         },
         "maths": {
             "q1": {
+<<<<<<< Updated upstream
                 "question": "Testing",
                 "options": [
                     "10",
@@ -25,6 +26,9 @@
             },
             "q3": {
                 "question": "Performance Very Very Good",
+=======
+                "question": "5 + 7 = ?Total",
+>>>>>>> Stashed changes
                 "options": [
                     "10",
                     "11",
