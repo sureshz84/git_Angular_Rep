@@ -14,7 +14,7 @@
         },
         "maths": {
             "q1": {
-                "question": "Testing One More Time",
+                "question": "Latest Update",
                 "options": [
                     "10",
                     "11",
@@ -22,27 +22,8 @@
                     "13"
                 ],
                 "answer": "12"
-            },
-            "q3": {
-                "question": "Performance Very Very Good",
-                "options": [
-                    "10",
-                    "11",
-                    "12",
-                    "13"
-                ],
-                "answer": "12"
-            },
-            "q2": {
-                "question": "12 - 8 = ?",
-                "options": [
-                    "1",
-                    "2",
-                    "3",
-                    "4"
-                ],
-                "answer": "4"
             }
+            
         }
     }
 }
