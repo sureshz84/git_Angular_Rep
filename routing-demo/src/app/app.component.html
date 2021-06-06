@@ -1,0 +1,26 @@
+<a routerLink="user">user</a>
+<br>
+<a routerLink="admin">admin</a>
+<br>
+<a routerLink="login">login</a>
+<br>
+<a routerLink="About">About</a>
+<h1>Notma</h1>
+  <h2 appCustomstyle>Custom</h2>
+
+  {{strCheck}}
+  <table border="1">
+    <tr>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr *ngFor="let item of data.posts">
+      <td>{{item.id}}</td>
+      <td>{{item.title}}</td>
+    </tr>
+    <tr *ngFor="let items of data.comments">
+      <td>{{items.id}}</td>
+      <td>{{items.body}}</td>
+    </tr>
+  </table>
+<router-outlet></router-outlet>

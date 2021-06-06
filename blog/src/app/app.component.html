@@ -1,0 +1,143 @@
+<app-header></app-header>
+
+
+
+<app-login (parentFunction)="parentFunction($event)"></app-login>
+
+
+
+<button mat-button>material button</button>
+<section class="example-section">
+    <mat-checkbox class="example-margin">Check me!</mat-checkbox>
+    <mat-checkbox class="example-margin" [disabled]="true">Disabled</mat-checkbox>
+  </section>
+
+
+  <section class="example-section">
+    <span class="example-list-section">
+      <mat-checkbox class="example-margin"
+                    [checked]="allComplete"
+                    [color]="task.color"
+                    [indeterminate]="someComplete()"
+                    (change)="setAll($event.checked)">
+        {{task.name}}
+      </mat-checkbox>
+    </span>
+    <span class="example-list-section">
+      <ul>
+        <li *ngFor="let subtask of task.subtasks">
+          <mat-checkbox [(ngModel)]="subtask.completed"
+                        [color]="subtask.color"
+                        (ngModelChange)="updateAllComplete()">
+            {{subtask.name}}
+          </mat-checkbox>
+        </li>
+      </ul>
+    </span>
+  </section>
+
+<h2>{{title}}</h2>
+<h3>{{name}}</h3>
+<h3>{{test()}}</h3>
+<h4>{{obj.name}}</h4>
+
+<app-signup-test></app-signup-test>
+<button mat-button (click)='getprop(boxID.value)'>Click here</button>
+<input #boxID  type="text"  [disabled]="disable_Box" [value]="Test"/>
+<input #boxID  type="text" [disabled]="disable_Box" value={{Test}}/>
+<h1>{{this.currentVal}}</h1>
+<h2>{{disable_Box}}</h2>
+
+<h1 *ngIf="show =='yes'; then ifBlock11 else elseBlock11">
+    <h1>If block</h1>
+</h1>
+
+<ng-template #ifBlock11>
+    <h1>If block</h1>
+</ng-template>
+<ng-template #elseBlock11>
+    <h1>Else block</h1>
+</ng-template>
+
+<ng-template [ngIf] = "show=='yes'" >
+    <h1>If block</h1>
+    
+</ng-template>
+<ng-template [ngIf] = "show=='no'" >
+    <h1>Else block</h1>
+    
+</ng-template>
+
+<ng-template #ifTest>
+    <h1>If block</h1>
+</ng-template>
+<ng-template #elseTest>
+    <h1>Else block</h1>
+</ng-template>
+
+<div [ngSwitch] ="color1">
+<h1 style="color: red;" *ngSwitchCase="'red'">Hi</h1>
+<h1 style="color: yellow;" *ngSwitchCase="'yellow'">Hi</h1>
+<h1 style="color: green;" *ngSwitchCase="'green'">Hi</h1>
+<h1 style="color: mediumspringgreen;" *ngSwitchDefault>Hi</h1>
+<table border="2">
+<tr>
+    <td>Name</td>
+    <td>ID</td>
+</tr>
+<tr *ngFor="let item of dataArray">
+    <td>       
+            {{item.name}}
+    </td>
+    <td>       
+        {{item.ID}}
+    </td>
+</tr>
+
+</table>
+</div>
+<form #simpleForm="ngForm" (ngSubmit)="getVal(simpleForm.value)">
+<input type="text" ngModel name="userName" placeholder="EnterUserName">
+<input type="text" ngModel name="age" placeholder="EnterUserage">
+<input type="text" ngModel name="add" placeholder="EnterUseradd">
+<br>
+<button mat-button>Get Value</button>
+
+<div class="form-group">
+  <label for="exampleInputEmail1">Email address</label>
+  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+</div>
+<div class="form-group">
+  <label for="exampleInputPassword1">Password</label>
+  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+</div>
+<div class="form-check">
+  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+</div>
+<button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<h1 [style.color]="err?'green':'red'">Hi</h1>
+<button (click)="CheckColor()">Color CHeck</button>
+<p *ngFor="let alert of alerts">
+    <ngb-alert [type]="alert.type" (closed)="close(alert)">{{ alert.message }}</ngb-alert>
+  </p>
+  <p>
+    <button mat-button type="button" class="btn btn-primary" (click)="reset()">Reset</button>
+  </p>
+
+  <h1 *ngFor="let item of dataArray1">
+  <p><ngb-progressbar type="success" [value]="item.ID"></ngb-progressbar></p>
+<p><ngb-progressbar type="info" [value]="item.ID"></ngb-progressbar></p>
+<p><ngb-progressbar type="warning" [value]="item.ID"></ngb-progressbar></p>
+<p><ngb-progressbar type="danger" [value]="item.ID"></ngb-progressbar></p>
+<p><ngb-progressbar type="primary" [value]="item.ID"></ngb-progressbar></p>
+<p><ngb-progressbar type="secondary" [value]="item.ID"></ngb-progressbar></p>
+<p><ngb-progressbar type="dark" [value]="item.ID"></ngb-progressbar></p>
+</h1>
+
+
+<app-footer></app-footer>
+

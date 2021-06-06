@@ -1,0 +1,19 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">Owner</th>
+        <th scope="col">Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of collection">
+        <td border="1">{{item.id}}</td>
+        <td border="1">{{item.Name}}</td>
+        <td border="1">{{item.owner}}</td>
+        <td border="1"><i (click)="deleteFun(item.id)" class="fa fa-trash" style="font-size:20px;color:red;"></i></td>
+        <td border="1" ><a routerLink="/update/{{item.id}}"><i  class="fa fa-edit" style="font-size:20px;color:blueviolet"></i></a></td>
+      </tr>
+    </tbody>
+  </table>
