@@ -1,0 +1,227 @@
+{
+    "message": "成功した",
+    "data": {
+      "flow_status": [
+        {
+          "step_set": 0,
+          "cancel_flag": 1,
+          "status": "completed",
+          "is_multi_approver": false,
+          "flow_status_for_multi_approver": [
+            
+          ]
+        },
+        {
+          "step_set": 2,
+          "cancel_flag": 0,
+          "status": "In Progress",
+          "is_multi_approver": false,
+          "flow_status_for_multi_approver": [
+            
+          ]
+        },
+        {
+          "step_set": 2,
+          "cancel_flag": 0,
+          "status": "In Progress",
+          "is_multi_approver": false,
+          "flow_status_for_multi_approver": [
+            
+          ]
+        },
+        {
+          "step_set": 2,
+          "cancel_flag": 0,
+          "status": "In Progress",
+          "is_multi_approver": true,
+          "flow_status_for_multi_approver": [
+            {
+              "step_set": 2,
+              "cancel_flag": 0,
+              "status": "In Progress"
+            },
+            {
+              "step_set": 2,
+              "cancel_flag": 0,
+              "status": "In Progress"
+            },
+            {
+              "step_set": 2,
+              "cancel_flag": 0,
+              "status": "In Progress"
+            }
+          ]
+        }
+      ],
+      "approver_list": [
+        {
+          "comment": "",
+          "step_name": "Start",
+          "super_admin": "",
+          "step_set": 0,
+          "cancel_flag": 1,
+          "status": "completed",
+          "step_type": 0,
+          "step_id": 53141,
+          "assignee_info": [
+            
+          ],
+          "name": "Smartflow Test",
+          "approved_smartflow_id": "48174cd1-5",
+          "approved_employee_id": null,
+          "approver_id": "48174cd1-5",
+          "flag": true,
+          "dept": false,
+          "applied_date": "2021-06-09 15:30:49",
+          "is_proxy": false,
+          "proxy_name": "",
+          "same_proxy_user": false,
+          "is_multi_approver": false,
+          "approver_list_for_multi_approver": [
+            
+          ]
+        },
+        {
+          "step_name": "Untitled",
+          "super_admin": "",
+          "step_set": 2,
+          "cancel_flag": 0,
+          "status": "In Progress",
+          "step_type": 2,
+          "step_id": 53142,
+          "assignee_info": [
+            {
+              "assignee_name": "User First",
+              "assignee_employee_id": "U001",
+              "assignee_smartflow_id": "62f8dc91-3",
+              "assignee_task_id": 65855
+            }
+          ],
+          "name": "User First",
+          "approved_smartflow_id": "",
+          "approved_employee_id": "",
+          "approver_id": "",
+          "flag": false,
+          "dept": false,
+          "applied_date": "",
+          "is_proxy": false,
+          "proxy_name": "",
+          "same_proxy_user": false,
+          "is_multi_approver": false,
+          "approver_list_for_multi_approver": [
+            
+          ]
+        },
+        {
+          "step_name": "Untitled",
+          "super_admin": "",
+          "step_set": 2,
+          "cancel_flag": 0,
+          "status": "In Progress",
+          "step_type": 2,
+          "step_id": 53143,
+          "assignee_info": [
+            
+          ],
+          "name": "User Third,User Second",
+          "approved_smartflow_id": "",
+          "approved_employee_id": "",
+          "approver_id": "",
+          "flag": false,
+          "dept": false,
+          "applied_date": "",
+          "is_proxy": false,
+          "proxy_name": "",
+          "same_proxy_user": false,
+          "is_multi_approver": false,
+          "approver_list_for_multi_approver": [
+            
+          ]
+        },
+        {
+          "step_name": "Untitled",
+          "super_admin": "",
+          "step_set": 2,
+          "cancel_flag": 0,
+          "status": "In Progress",
+          "step_type": 2,
+          "step_id": 53144,
+          "assignee_info": null,
+          "name": "",
+          "approved_smartflow_id": "",
+          "approved_employee_id": "",
+          "approver_id": "",
+          "flag": false,
+          "dept": false,
+          "applied_date": "",
+          "is_proxy": false,
+          "proxy_name": "",
+          "same_proxy_user": false,
+          "is_multi_approver": true,
+          "approver_list_for_multi_approver": [
+            {
+              "step_name": "Untitled",
+              "super_admin": "",
+              "step_set": 2,
+              "cancel_flag": 0,
+              "status": "In Progress",
+              "step_type": 2,
+              "step_id": 53144,
+              "assignee_info": [
+                
+              ],
+              "name": "User Sixth",
+              "flag": false,
+              "dept": false,
+              "applied_date": "",
+              "is_proxy": false,
+              "proxy_name": "",
+              "same_proxy_user": false
+            },
+            {
+              "step_name": "Untitled",
+              "super_admin": "",
+              "step_set": 2,
+              "cancel_flag": 0,
+              "status": "In Progress",
+              "step_type": 2,
+              "step_id": 53144,
+              "assignee_info": [
+                
+              ],
+              "name": "User Fifth",
+              "flag": false,
+              "dept": false,
+              "applied_date": "",
+              "is_proxy": false,
+              "proxy_name": "",
+              "same_proxy_user": false
+            },
+            {
+              "step_name": "Untitled",
+              "super_admin": "",
+              "step_set": 2,
+              "cancel_flag": 0,
+              "status": "In Progress",
+              "step_type": 2,
+              "step_id": 53144,
+              "assignee_info": [
+                
+              ],
+              "name": "User Fourth",
+              "flag": false,
+              "dept": false,
+              "applied_date": "",
+              "is_proxy": false,
+              "proxy_name": "",
+              "same_proxy_user": false
+            }
+          ]
+        }
+      ],
+      "application_id": 7293,
+      "applied_date": "2021/06/09 15:30",
+      "applied_by": "48174cd1-5",
+      "form_name": "Prored-AppTest1"
+    }
+  }
